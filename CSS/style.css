@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Definições padrões */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #122044;
+}
+
+.margin {
+    border: 1px solid red;
+}
+.alinhamento{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#home a{
+    color: #7285AC;
+    text-decoration: none;
+}
+#a:link, a:visited {
+	text-decoration: none
+	}
+#home a:hover {
+    text-decoration: none;
+	color: #C4D0EC;
+	}
+a:active {
+	text-decoration: none
+	}
+
+/* Home */
+#home {
+    min-height: 100vh;
+    position: relative;
+    background-color: #0a142e;
+}
+
+#home::before {
+    content: '';
+    position: fixed;
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+    width: 60vw;
+    height: 60vw;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 80%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+#home h1 {
+    color: #C4D0EC;
+    font-size: 3rem;
+    font-weight: 800;
+}
+#home h2 {
+    color: #C4D0EC;
+}
+#home h3 {
+    color: #C4D0EC;
+    font-size: 1.4rem;
+}
+#home h4{
+    color: #C4D0EC;
+    font-size:1rem ;
+}
+#home p {
+    color: #9fabc5;
+}
+/* Sobre-mim */
+.fixed-md {
+    position: fixed;
+    top: 0;
+}
+img.icon:hover{
+    color: #fff !important;
+}
+/* Estilos CSS para a linha centralizada */
+.centered-line {
+    text-align: center;
+    border-top: 1px solid #7285AC; /* Linha sólida preta */
+    line-height: 0.1em; /* Espessura da linha */
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+}
+.linhaExpandir{
+    animation: linhaExpandir .2s ease-in forwards;
+}
+/* Conteúdo */
+
+.span-branco{
+    color: #ffffff;
+}
+
+#conteudo #sobre p{
+    font-weight: 600 ;
+    letter-spacing: .1em;
+}
+
+#conteudo #projetos .btn-custom{
+    border-radius: 20px;
+    width: 70px;
+    background: #183656;
+    padding: 4px;
+    color:#4DBFC5;
+    border: 0px ;
+}
+.text-ferramenta{
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.card-projeto:hover{
+    border-radius: 15px;
+    background-color: rgba(24, 54, 86, 0.3); /* Cor de fundo semitransparente */
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: Adiciona uma sombra para melhorar o visual */
+}
+.cor-titulo-hover{
+    color:#4DBFC5 !important;
+}
+.card-projeto p{
+    font-size: .9rem;
+    padding: 20px;
+}
+.data{
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+/* Animações */
+@keyframes linhaExpandir{
+   0%{
+    color:#C4D0EC  !important;
+   }
+   100%{
+    width: 100px;
+   }
+}
