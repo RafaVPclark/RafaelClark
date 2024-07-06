@@ -7,6 +7,9 @@
     <title>Rafael Clark</title>
     <!-- LINK CSS PERSONALIZADO -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- Link bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -34,7 +37,7 @@
                                     <div class="centered-line"> </div>
                                 </div>
                                 <div class="col-3  pt-2 ">
-                                    <a href="#sobre">SOBRE</a>
+                                    <a href="#sobre" id="navSobre">SOBRE</a>
                                 </div>
                             </div>
                             <div class="row" id="link2">
@@ -42,7 +45,7 @@
                                     <div class="centered-line"> </div>
                                 </div>
                                 <div class="col-3 pt-2">
-                                    <a href="#">EXPERIÊNCIAS</a>
+                                    <a href="#exp-inicio" id="navExperiencias">EXPERIÊNCIAS</a>
                                 </div>
                             </div>
                             <div class="row" id="link3">
@@ -50,27 +53,27 @@
                                     <div class="centered-line"> </div>
                                 </div>
                                 <div class="col-3 pt-2">
-                                    <a href="#projetos">PROJETOS</a>
+                                    <a href="#projetos-inicio" id="navProjetos">PROJETOS</a>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                     <!-- Icones -->
-                    <div class="row mt-5 pt-5 mx-md-0 mx-auto">
+                    <div class="row mt-3 pt-3 mx-md-0 mx-auto">
                         <div class="col-1 mx-md-0 mx-auto">
-                            <a href="">
-                                <img class="icon" src="Imgs/github-142-svgrepo-com.svg" width="30px" alt="">
+                            <a href="https://github.com/RafaVPclark" target="_blank">
+                                <i class="bi bi-github fs-4"></i>
                             </a>
                         </div>
                         <div class="col-1 mx-md-0 mx-auto">
                             <a href="">
-                                <img class="icon" src="Imgs/instagram-svgrepo-com.svg" width="30px" alt="">
+                                <i class="bi bi-instagram fs-4"></i>
                             </a>
                         </div>
                         <div class="col-1 mx-md-0 mx-auto">
-                            <a href="">
-                                <img class="icon" src="Imgs/linkedin-rounded-svgrepo-com.svg" width="30px" alt="">
+                            <a href="https://www.linkedin.com/in/rafaelclark/" target="_blank">
+                                <i class="bi bi-linkedin fs-4"></i>
                             </a>
                         </div>
                     </div>
@@ -97,14 +100,74 @@
                     <div class="row pt-5 mt-5" id="projetos">
                         <div class="col-10 mt-5 mx-auto">
                             <div class="row">
-                                <h1 class="pb-2">Api's</h1>
+                                <!-- Card para experiências -->
+                                <h1 class="pb-2" id="exp-inicio">Experiências</h1>
+                                <a href="https://www.mg.gov.br/planejamento" target="_blank">
+                                    <div class="col-12 card-projeto mt-3 pb-3 mb-3 px-auto"
+                                        onmouseover="changeTitleColor(this)" onmouseout="resetTitleColor(this)">
+                                        <div class="row">
+                                            <div class="col-3 mx-auto pt-3 data">
+                                                <p>2022 - 2023</p>
+                                            </div>
+                                            <div class="col-9 pt-3">
+                                                <h4 class="titulo-projeto">SEPLAG - Acessoria de Tecnologia</h4>
+                                                <p>Durante meu tempo na SEPLAG (Secretaria de Planejamento e Gestão),
+                                                    participei ativamente da refatoração de um sistema interno de gestão
+                                                    para Especialistas em Políticas Públicas e Gestão Governamental
+                                                    (EPPGG). Utilizando Laravel para o backend e as tecnologias
+                                                    Bootstrap e Vue.js para o frontend, consegui otimizar a performance
+                                                    do sistema e melhorar a experiência do usuário. Essa experiência
+                                                    aprimorou significativamente meu conhecimento em desenvolvimento web
+                                                    e me proporcionou habilidades valiosas em tecnologias modernas.</p>
+                                            </div>
+                                            <div class="col-9 ms-auto">
+                                                <div class="row mx-auto me-3 me-3">
+                                                    <div class="col-6 col-lg-3 pb-3">
+                                                        <button class="btn-custom"><span
+                                                                class="text-ferramenta">Html</span></button>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3 pb-3">
+                                                        <button class="btn-custom"><span
+                                                                class="text-ferramenta">Css</span></button>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3 pb-3">
+                                                        <button class="btn-custom"><span
+                                                                class="text-ferramenta">Bootstrap</span></button>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3 pb-3">
+                                                        <button class="btn-custom"><span
+                                                                class="text-ferramenta">Js</span></button>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3 pb-3">
+                                                        <button class="btn-custom"><span
+                                                                class="text-ferramenta">PHP</span></button>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3 pb-3">
+                                                        <button class="btn-custom"><span
+                                                                class="text-ferramenta">Laravel</span></button>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3 pb-3">
+                                                        <button class="btn-custom"><span
+                                                                class="text-ferramenta">Vue.js</span></button>
+                                                    </div>
+                                                    <div class="col-6 col-lg-3 pb-3">
+                                                        <button class="btn-custom"><span
+                                                                class="text-ferramenta">Vuetify</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <h1 class="pb-2" id="projetos-inicio">Api's</h1>
                                 <!-- Card para projeto de tempo e notícias -->
                                 <a href="https://rafavpclark.github.io/App-Clima-Noticia/" target="_blank">
                                     <div class="col-12 card-projeto mt-3 pb-3 mb-3 px-auto"
                                         onmouseover="changeTitleColor(this)" onmouseout="resetTitleColor(this)">
                                         <div class="row">
                                             <div class="col-3 mx-auto pt-3 data">
-                                                <p>2024 - present</p>
+                                                <p>2024</p>
                                             </div>
                                             <div class="col-9 pt-3">
                                                 <h4 class="titulo-projeto">Project Weather And News</h4>
@@ -116,7 +179,7 @@
                                                     intuitivo a informações cruciais.</p>
                                             </div>
                                             <div class="col-9 ms-auto">
-                                                <div class="row mx-auto">
+                                                <div class="row mx-auto me-3">
                                                     <div class="col-6 col-lg-3 pb-3">
                                                         <button class="btn-custom"><span
                                                                 class="text-ferramenta">Html</span></button>
@@ -160,7 +223,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-9 ms-auto">
-                                                <div class="row mx-auto">
+                                                <div class="row mx-auto me-3">
                                                     <div class="col-6 col-lg-3 pb-3">
                                                         <button class="btn-custom"><span
                                                                 class="text-ferramenta">Html</span></button>
@@ -205,7 +268,7 @@
                                                     para restauração.</p>
                                             </div>
                                             <div class="col-9 ms-auto">
-                                                <div class="row mx-auto">
+                                                <div class="row mx-auto me-3">
                                                     <div class="col-6 col-lg-3 pb-3">
                                                         <button class="btn-custom"><span
                                                                 class="text-ferramenta">Java</span></button>
@@ -231,7 +294,7 @@
                                                     usuário e a interface.</p>
                                             </div>
                                             <div class="col-9 ms-auto">
-                                                <div class="row mx-auto">
+                                                <div class="row mx-auto me-3">
                                                     <div class="col-6 col-lg-3 pb-3">
                                                         <button class="btn-custom"><span
                                                                 class="text-ferramenta">Html</span></button>
@@ -264,7 +327,7 @@
                                                     usuário e a interface.</p>
                                             </div>
                                             <div class="col-9 ms-auto">
-                                                <div class="row mx-auto">
+                                                <div class="row mx-auto me-3">
                                                     <div class="col-6 col-lg-3 pb-3">
                                                         <button class="btn-custom"><span
                                                                 class="text-ferramenta">Html</span></button>

@@ -83,9 +83,6 @@ a:active {
     position: fixed;
     top: 0;
 }
-img.icon:hover{
-    color: #fff !important;
-}
 /* Estilos CSS para a linha centralizada */
 .centered-line {
     text-align: center;
